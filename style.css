@@ -1,0 +1,759 @@
+/*
+Theme Name: Samba Tech
+Theme URI: http://sambatech.com
+Author: Felipe Marcos
+Author URI: http://www.felipemarcosti.com
+Description: Tema para o website www.sambatech.com
+Version: 1.0
+Tags: videos, sites
+Text Domain: website
+*/
+@import url("css/bootstrap.min.css");
+/* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+	transition: All 0.5s;	
+}
+
+/*CORES PADRÕES
+ Verde claro:	#3FC026
+ Cor menu navegação: #4D6C87
+ Background menu : #FFFFFF
+
+*/
+
+/*PROPRIEDADE DE ELEMENTOS*/
+
+html { overflow-y: scroll; }
+html { overflow: -moz-scrollbars-vertical; }
+html { overflow-x: auto; }
+
+/*
+Ajuste de alinhamento de imagem do editor: WP
+*/
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+/*CHAMAR IMAGEM DE FUNDO */
+body{
+	font-family: 'Varela', sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+	position:relative;
+	height:100%;
+	width: auto;
+	background-image: url('images/fundo.png');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+	font-size: 36px;
+}
+
+h2{
+	font-size: 28px;
+}
+
+h3{
+	font-size: 22px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+h5{
+	font-size: 14px;
+}
+
+h6{
+	font-size: 12px;
+}
+
+p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 1.5;
+	color: #555;
+	text-align: justify;
+}
+
+strong, b{
+	font-weight: bold;	
+}
+
+italic, i, em{
+	font-style:italic;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #3FC026;
+	text-decoration: none;
+}
+
+/*a:visited{
+	color: #000;
+	text-decoration: none;
+}*/
+
+a:active{
+	color: #000;
+	text-decoration: none;
+}
+
+a:focus{
+	color: #000;
+	text-decoration: none;
+}
+
+/*CLASSES*/
+
+.clear{
+	clear: both;
+}
+
+.pageWidth{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.colorido{
+	
+	color:#3FC026;
+}
+
+
+/*CABEÇALHO*/
+#header{
+	width: auto;
+	position: relative;
+	background-color:#3FC026;
+	height:150px;
+	
+}
+
+#area-cabecalho{
+	
+	
+	
+}
+
+#image-logo{
+
+background-position:center center;
+background-repeat:  no-repeat;
+margin: 50px 0px 0px 10px; 
+width:240px;
+height:55px;
+
+}
+
+
+
+/*MENU*/
+#nav{
+	top:45px;
+	position: relative;
+	background-color:#FFFFFF;
+	width:100%;
+	height:48px;	
+	padding:10px;
+}
+
+#menu{
+	width: 980px;
+	margin: 0 auto;
+}
+
+#menu li{
+ margin:5px 30px 0px 10px;
+ float:left;
+ list-style-type:none;
+ 
+ text-transform:uppercase;
+}
+#menu li a{
+ font-size:13px;
+ color:#4D6C87;
+}
+
+/*TRANSIÇÃO MENU*/
+#menu li a:hover{
+ font-size:13px;
+ color:#3FC026;
+}
+
+/*FORMULARIO DE PESQUISA */
+#pesquisar{
+	margin: 60px 10px 0px 10px; 
+	position:relative;
+	float:right;
+	height:150px;
+	width:300px;	
+}
+
+
+#searchform .form-control{
+height:25px;
+	
+
+}
+.fa-search {
+     position: absolute;
+     right: 10px;
+	 top: 5px;}
+
+#searchform .button{
+background-color:#4D6C87;
+height:25px;
+}
+
+#searchform  #s-btn{
+border: 1px solid #4d6c87;
+height:25px;
+background-color:#4D6C87;	
+width:35px;
+}
+#searchform  #s-btn:hover{
+border: 1px solid #4d6c87;
+height:25px;
+background-color:#4D6C87;	
+width:35px;
+}
+
+#s-btn{
+	background-color:#4D6C87;
+	color: #fff;
+	position:relative;
+}
+
+
+
+
+
+/* INDEX */
+
+#index-fundo{
+
+	background-color: rgba(60,75,89,0.5);
+	width:auto;
+	height:100%;
+}
+
+#index-controller{
+	position:relative;
+	margin-top:50px;
+	width:auto;
+	height:100%;
+}
+
+/* Post video destaque */
+#video-destaque{
+	position:relative;
+	width:auto;
+	height:100%;
+}
+
+#video-informacao{
+	position:relative;
+	width:640px;
+	height:100%;
+	margin:50px 0px 50px 0px;
+}
+
+
+
+#post-destaque span{
+	position:relative;
+	float:left;
+	top:5px;
+	padding-right:10px;
+
+}
+
+#post-destaque span object{
+	position:relative;
+	float:left;
+	
+}
+#video-comentarios{
+	float:right;
+	width:330px;
+	height:100%;
+
+}
+#video-informacao p{
+color:#fff;	
+	
+}
+
+#video-informacao button{
+   margin-right:10px;
+   margin-top:10px;
+}
+#video-comentarios{
+	color:#FFF;
+	
+}
+
+
+/* post videos mais classificados */
+#classificados-index{
+	position:relative;
+	background-color:#3FC026;
+	width:100%;
+	height:100%;
+	padding:50px 0px 50px 0px;
+}
+
+#classificados-controller{
+	position:relative;
+	height:100%;
+	width:100px;
+	padding-right:10px;
+}
+#classificados-index h4{
+	color:#fff;
+	margin-bottom:20px;
+}
+
+#classificados-controller h5{
+	text-align:center;
+	color:#fff;
+	width:200px;
+	height:100%;
+}
+
+
+
+
+/* post videos recentes */
+
+#recentes-index{
+	position:relative;
+	width:100%;
+	height:100%;
+	padding:50px 0px 50px 0px;
+}
+
+#recentes-controller{
+	margin-top:20px;
+	position:relative;
+	height:100%;
+	width:100px;
+	padding-right:10px;
+}
+#recentes-index h4{
+	color:#fff;
+	margin-bottom:20px;
+}
+
+#recentes-controller h5{
+	text-align:center;
+	color:#fff;
+	width:300px;
+	height:100%;
+}
+
+
+/* entre em contato */
+#index-contato{
+	width:100%;
+	height:100%;
+	background-color:rgba(49,54,63,0.5);
+	
+}
+
+
+.contact-text{
+	position:relative;
+	width:100%;
+	text-align: center;
+	margin:50px 10px 50px 10px;
+	color:#FFF;
+}
+
+.contact-lead-in{
+	
+	color:#FFF;
+	font-size:26px;
+	margin-top:10px;
+}
+
+.textocolorido{
+	
+	color:#3FC026;
+	font-size:26px;
+	margin-top:10px;
+}
+
+.contact-heading{
+	margin:10px 0px 15px 0px;
+	
+}
+
+
+
+/* footer widgets*/
+#footer-widgets{
+	background-color:#3FC026;
+	width:100%;
+	height:100%;	
+}
+
+#footer-imagem{
+	height:100%;
+	
+}
+
+#area-widgets{
+	height:100%;
+   
+}
+#footer-texto{
+	color:#fff;
+	width:300px;
+	height:200px;
+	top:80px;
+	left:157px;
+}
+#footer-texto h3 {
+	margin-bottom:20px;
+}
+#footer-texto h3 span{
+font-weight:bold;	
+	
+}
+#footer-texto p{
+	
+	color:#fff;
+}
+
+/* widgets o que estão falando */
+#footer-twitter{
+	float:right;
+	width:300px;
+	height:200px;
+	top:80px;
+	left:-250px;
+	color:#FFF;
+}
+
+#footer-twitter li{
+list-style-type:none;
+
+}
+/* widgets nos encontre */
+#social-footer{
+	float:right;
+	width:300px;
+	height:200px;
+	top:80px;
+	left:-250px;
+	color:#FFF;	
+}
+#social-footer li{
+list-style-type:none;
+	
+	
+}
+
+/*Inserindo imagem no footer*/
+#image-footer{
+	top:80px;
+	left:157px;
+}
+
+#image-footer img{
+	width:200px;
+	height:250px;
+	
+}
+
+/* footer copyright*/
+#footer-copyright{
+	position:relative;
+	padding:20px 0px 20px 0px;
+	background-color:#FFF;
+	width:auto;
+	height:110px;
+}
+
+#footer-copyright span{
+  color:#7F7E7E;
+
+	
+}
+#copyright-controller{
+	width:500px;
+	top:30px;
+	float:left;
+	left:165px;
+}
+
+
+#copyright-controller-detail{
+	width:400px;
+	left:50px;
+	float:right;
+	left:-100px;
+	
+}
+#copyright-controller-detail li{
+	position:relative;
+	color:#7F7E7E;
+	float:right;
+
+}
+ 
+#copyright-controller-detail li img{
+	position:relative;
+	color:#CCC;
+	width:150px;
+	height:36px;
+	top:-30px;
+	
+	
+}
+
+
+
+/*CODIGO CLASSIFICACAO*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+
+/*customizar comentarios*/
+#comentario-controller{
+	
+list-style-type:none;
+	
+}
+
+#comentario-titulo{
+font-weight:bold;
+margin-left:20px;	
+margin-bottom:30px;
+}
+
+::-webkit-input-placeholder {
+	position:relative;
+top:12px;
+padding-left:20px;
+   color: white;
+   font: 12px verdana, arial, sans-serif;
+}
+
+:-moz-placeholder {
+	position:relative;
+top:12px;
+padding-left:20px;
+   color: white;
+   font: 12px verdana, arial, sans-serif;
+}
+
+::-moz-placeholder {
+	position:relative;
+	top:12px;
+	padding-left:20px;
+   color: white;  
+   font: 12px verdana, arial, sans-serif;
+}
+
+:-ms-input-placeholder {  
+position:relative;
+top:12px;
+padding-left:20px;
+   color: white;  
+   font: 12px verdana, arial, sans-serif;
+}
+
+#comment{
+	float:left;
+	border:1px solid #404248;
+	width:300px;
+	height:45px;
+	background-color:rgba(24,29,37,0.0);
+	margin-top:20px;
+	margin-left:20px;
+}
+	
+#comentario-conteudo{
+		position:relative;
+		width:auto;
+		height:100%;
+		color:#fff;
+	    padding-left:20px;
+		margin-bottom:50px;
+		
+}	
+	
+
+/*configurando estrelas*/	
+
+.rating {
+
+left:50px;
+position:relative;
+color:white;
+unicode-bidi: bidi-override;
+direction: rtl;
+}
+
+.rating span{
+color:white;
+
+}
+
+
+.rating > span::after,
+.rating > span: ~ span:after{
+	color:#fff;
+   content: "\2605";
+  
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+	color:yellow;
+   content: "\2605";
+   position: absolute;
+}
+
+
+/*inserindo estrela no video destaque*/
+
+.rating-destaque {
+
+left:50px;
+position:relative;
+color:white;
+unicode-bidi: bidi-override;
+direction: rtl;
+}
+
+.rating-destaque span{
+color:white;
+
+}
+
+
+.rating-destaque> span::after,
+.rating-destaque > span: ~ span:after{
+	color:#fff;
+   content: "\2605";
+  
+}
+
+.rating-destaque > span:hover:before,
+.rating-destaque > span:hover ~ span:before {
+	color:yellow;
+   content: "\2605";
+   position: absolute;
+}
+
+
+.rating-destaque{
+	width:auto;
+	height:100%;
+	position:relative;
+	top:-30px;
+	left:135px;
+	float:rigth;
+	
+	
+}
+
+/*configurando widgets*/	
+
+#widgets-controller{
+	width:300px;
+	height:100%;
+}
+
+#sabatech-widgets {
+	position:relative;
+	float:left;
+	
+}
+
+#ciclus-widgets{
+	margin-right:75px;
+	position:relative;
+	float:right;
+	
+}
+
+
+#ciclus-widgets h5 button a {
+	
+	color:#3FC026;
+	
+}
+
+#sabatech-widgets h5 button a {
+	
+	color:#3FC026;
+	
+}
+
+#sabatech-widgets-2 {
+	position:relative;
+	float:left;
+	background-image: url('images/twitter.png');
+}
+
+
+
+/*ERRO 404*/
+
+
+#conteudoBloco{
+	position:relative;
+	width:auto;
+	height:500px;
+	top:-50px;
+
+}
+
+#conteudoBloco h4{
+	left:150px;
+	top:300px;
+	position:relative;
+	color:red;
+	font-size:26px;
+}
